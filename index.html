@@ -108,8 +108,10 @@ body {
 <input type="submit" value="Submit">
   </form>
 <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
+ function myFunction(x) {
+  x.classList.toggle("change");
+}                       
+ var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
