@@ -49,6 +49,19 @@ body {
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
 }
+ .overlay a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.overlay input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}   
 
 .overlay .closebtn {
   position: absolute;
@@ -59,6 +72,7 @@ body {
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
+  .overlay input[type=text]
   .overlay .closebtn {
   font-size: 40px;
   top: 15px;
@@ -70,8 +84,15 @@ body {
 </head>
 <body>
 <div id="myNav" class="overlay">
+  <input type="text" placeholder="Search..">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
+    <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  
+</div>
+
     <a href="#">About</a>
     <a href="#">Services</a>
     <a href="#">Clients</a>
