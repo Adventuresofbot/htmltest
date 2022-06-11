@@ -92,11 +92,11 @@ body {
     <a href="#">Services</a>
     <a href="#">Clients</a>
     <a href="#">Contact</a>
-      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">  </div>
+      <input type="text" id="mySearch" </div>
   </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
   <h1>Hello World</h1>
-<h2>Hello World/h2>
+<h2>Hello World<h2>
 <h3>Hello World</h3>
 <h4>Hello World</h4>
 <h5>Hello World</h5>
@@ -119,24 +119,6 @@ body {
 <script>
   function openNav() {
   document.getElementById("myNav").style.width = "100%";
-}
- function myFunction() {
-  // Declare variables
-  var input, filter, a, i;
-  input = document.getElementById("mySearch");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("overlay");
-  li = ul.getElementsByTagName("li");
-
-  // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < .length; i++) {
-    a = [i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      [i].style.display = "";
-    } else {
-      [i].style.display = "none";
-    }
-  }
 }                                                      
 
 function closeNav() {
